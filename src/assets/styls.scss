@@ -1,0 +1,117 @@
+
+@mixin myMixin($param) {
+    
+    property: value;
+  }
+@mixin exampleMixin {
+    background-color: lightblue;
+    color: darkblue;
+  }
+  .example-title {
+    @include exampleMixin;
+  }
+.user-details--user1 {
+    @include userDetailsColors($primary: lightblue, $secondary: darkblue);
+    
+  }
+  .user-details--user2 {
+    @include userDetailsColors($primary: lightgreen, $secondary: darkgreen);
+    
+  }
+.login-form {
+    
+    input {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+
+.registration-form {
+    input {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+.user-details-page {
+    form {
+      input {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  
+    .delete-button {
+      background-color: #dc3545;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+  
+.users-page {
+    div {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
+  
+  
+  
+  
